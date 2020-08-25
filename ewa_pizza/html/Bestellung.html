@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../img/content/favicon.png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Bestellung</title>
+</head>
+
+<body>
+	<div class="bg-image"></div><!-- Background -->
+
+	<header class="header">
+		<!-- Header -->
+		Pizzeria del Secolo
+	</header>
+
+	<nav class="topnav" id="myTopnav">
+		<!-- Navigationbar -->
+		<!-- <a href="javascript:void(0);" class="icon" onclick="menu()">
+            <i class="fa fa-bars"></i>
+        </a> -->
+		<a class="active" href="Bestellung.html">Bestellung</a>
+		<a href="Kunde.html">Bestellstatus</a>
+		<a href="Baecker.html">Pizzabäcker</a>
+		<a href="Fahrer.html">Fahrer</a>
+	</nav>
+
+	<div class="bg-text">
+		<!-- Inhalt -->
+		<div id="pizzaOrder">
+			<div class="pizzaList">
+				<!-- pizza menu -->
+			</div>
+			<div class="cart">
+				<!-- <select name="PizzaSelector" id="pizzaSelector" multiple>
+						<option id="selectedPizza" value="test">Test</option>
+					</select> -->
+				<div id="pizzaSelector">
+					<!-- <div class="flex-container">
+							<div class="flex-item flex1">Pizza Tuna</div>
+							<div class="flex-item flex2">3</div>
+							<div class="flex-item flex3">
+								<button class="deleteButton">Delete</button>
+							</div>
+						</div> -->
+				</div>
+				<!-- <div id="editPizza">
+						<button id="deleteButton">Alle löschen</button>
+						<button id="deleteSelectionButton">Auswahl löschen</button>
+					</div> -->
+				<div id="price">
+					Gesamtpreis:
+					<i id="selectedItemPrice">
+						0
+					</i>
+					<br>
+				</div>
+				<div id="nameAndAdress">
+					<label for="name_input">Name: </label>
+					<br>
+					<input name="name_input" id="name_input" type="text" placeholder="Name">
+					<br><br>
+					<label for="address_input">Adresse: </label>
+					<br>
+					<input name="address_input" id="address_input" type="text" placeholder="Adresse">
+					<br>
+					<div class="alert" id="warning_input">
+						<span class="closebtn" onclick="hideAlertBox()">&times;</span>
+						<strong>Fehler! Warenkorb leer / Bitte geben Sie ihren Name und Addresse ein.
+						</strong> 
+					</div>
+					<br>
+				</div>
+				<button id="orderButton">Bestellen</button>
+				<div class="alertInfo" id="info-order">
+					<span class="closebtn" onclick="hideInfoBox()">&times;</span>
+					<strong id="orders_status">TEST</strong>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="../js/order.js" type="module"></script>
+</body>
+
+</html>

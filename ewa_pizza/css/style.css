@@ -1,0 +1,297 @@
+
+
+body, html {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
+  .bg-image {
+    /* The image used */
+    background-image: url("../img/content/background.jpg");
+    
+
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+
+    position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 100%;
+
+  display: block;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(4px);
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1em;
+    background-color:rgba(252, 252, 252, 0.6);
+    position: relative;
+  z-index: 2;
+  }
+  
+  /* Sticky NavBar */
+nav{
+    z-index: 3;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+header{
+    padding: 0.5em;
+    font-family: cursive;
+    font-size: 2.7em;
+    position: relative;
+    z-index: 300;
+    background-color: rgba(151, 149, 151,0.5);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #34A853;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.49em;
+    float: left;
+    border-right: 0.1em solid #F5F5F1;
+}
+
+.topnav a:hover:not(.active){
+    background-color: #F5F5F1;
+    color: #000000;
+}
+
+.active {
+    background-color: #EA4335;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+i.fa{
+    font-size:2em;
+    text-shadow:2px 2px 4px #000000;
+}
+
+#pizzaOrder{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.cart{
+    width: 50%;
+    float: right;
+}
+.pizzaList{
+    width: 40%;
+}
+.pizza{
+    margin-bottom: 1em;
+    height: 6em;
+    border: 0.1em solid rgba(0, 0, 0,0.8);
+}
+.pizza:hover{
+    background-color: rgba(0, 0, 0,0.8);
+    color: #F5F5F1;
+}
+.pizzaContent{
+    text-align: right;
+    font-size: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-right: 0.4em;
+    float: right;
+}
+.pizzaImage{
+    padding: 0.01em;
+    height: 100%;
+}
+div#pizzaSelector{
+    overflow-y: hidden;
+    padding: 0.5em;
+    width: 100%;
+    /* height: 20em; */
+    color: #F5F5F1;
+    /* background-color: rgba(0, 0, 0,0.8); */
+}
+#editPizza{
+    margin-top: 1em;
+}
+button{
+    background-color: #34A853;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+button:hover{
+    background-color: #F5F5F1;
+    color: #000000;
+}
+div#price{
+    width: 10em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight:bold; 
+}
+i#selectedItemPrice{
+    font-style: normal;
+}
+div#nameAndAdress{
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+/* input[type="radio"] {
+	display: inline-block;
+	width: 140px;
+	text-align: right;
+}​ */
+input{
+    padding: 1em;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.drivertext{
+    width: 30em;
+}
+.pizzaName,.adress{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight:bold; 
+    text-decoration: underline;
+}
+.pizzaStatus{
+<<<<<<< HEAD
+<<<<<<< HEAD:style.css
+    
+=======
+>>>>>>> final work:css/style.css
+    display: flex;
+    align-items: center;
+    justify-content: center;
+=======
+    text-align: center;
+>>>>>>> Revert "Merge branch 'Feature' into 'master'"
+    border: 0.1em solid rgba(0, 0, 0,0.8);
+    border-radius: 1em;
+    padding: 1em;
+}
+.orderedPizzas{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .bg-text{width: 100%;}
+    .topnav a {display: none;}
+    .topnav a.icon {
+        width: 100%;
+        padding-left: 50%;
+        vertical-align: middle;
+        display: flex;
+    }
+    .topnav.responsive {position: relative; }
+    .topnav.responsive .icon {
+        position: relative;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .pizza, .pizzaStatus{margin-right: 2em;}
+    div#pizzaSelector, #nameAndAdress{ width: 94%;}
+    .cart, .pizzaList{
+        padding-right: 1em;
+        width: 100%;
+        float: none;
+        margin-right: 1em;
+    }
+    #pizzaOrder{display: block;}
+}
+.flex-container {
+	padding: 1em;
+	margin: 1em;
+	border: 2px solid red;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .flex-item {
+	color: gray;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: left;
+  }
+  
+  .flex1, .flex2, .button {
+	display: flex;
+	align-items: center;
+  }
+  
+  .flex1 { flex: 1 1 2em; }
+  .flex2 { flex: 0 0 2em; } 
+  .flex3 { flex: 0 0 2em; }
+  
+  .deleteButton {  
+	background-color: red;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 15px 32px;
+	margin-left: 2em;
+  }
+
+  .alert {
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
+  }
+  .alertInfo {
+	padding: 20px;
+	background-color: #31d41b;
+	color: white;
+	margin-top: 1em;
+  }
+  .closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+	color: black;
+  }
+  .drivertext{
+    width: 30em;
+}
